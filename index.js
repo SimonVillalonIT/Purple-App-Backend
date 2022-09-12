@@ -5,7 +5,7 @@ import "./database/connectdb.js";
 
 const app = express();
 app.use(express.json());
-app.use("/api/v1", authRouter);
+app.use("/api/v1/auth", authRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
